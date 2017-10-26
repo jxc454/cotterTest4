@@ -1,0 +1,319 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "zzzz-zzzz",
+      "name" : "Parking Citation Fine Amounts",
+      "attribution" : "Department of Finance",
+      "attributionLink" : "http://cityservices.baltimorecity.gov/parkingfines",
+      "averageRating" : 0,
+      "category" : "Financial",
+      "description" : "Information on parking citations issued within the City of Baltimore",
+      "displayType" : "table",
+      "downloadCount" : 0,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "indexUpdatedAt" : 1498903562,
+      "licenseId" : "CC_30_BY",
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 0,
+      "provenance" : "community",
+      "publicationAppendEnabled" : false,
+      "publicationStage" : "published",
+      "rowsUpdatedAt" : 1498903380,
+      "rowsUpdatedBy" : "6r9a-dfdj",
+      "tableId" : 9821251,
+      "totalTimesRated" : 0,
+      "viewCount" : 0,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 250598102,
+        "name" : "Description",
+        "dataTypeName" : "text",
+        "fieldName" : "description",
+        "position" : 9,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1434274,
+        "width" : 225,
+        "format" : { }
+      }, {
+        "id" : 250598103,
+        "name" : "ViolFine",
+        "dataTypeName" : "money",
+        "description" : "Original violation fine",
+        "fieldName" : "violfine",
+        "position" : 10,
+        "renderTypeName" : "money",
+        "tableColumnId" : 1434041,
+        "width" : 166,
+        "format" : {
+          "humane" : "false",
+          "currency" : "USD",
+          "align" : "right",
+          "aggregate" : "sum"
+        }
+      } ],
+      "grants" : [ {
+        "inherited" : true,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "Creative Commons Attribution 3.0 Unported",
+        "logoUrl" : "images/licenses/cc30by.png",
+        "termsLink" : "http://creativecommons.org/licenses/by/3.0/legalcode"
+      },
+      "metadata" : {
+        "thumbnail" : {
+          "page" : {
+            "filename" : "page.png-341.182.436.0.png",
+            "selection" : {
+              "width" : 341,
+              "y1" : 0,
+              "y2" : 182,
+              "x1" : 436,
+              "x2" : 777,
+              "height" : 182
+            },
+            "created" : true
+          }
+        },
+        "rdfSubject" : "0",
+        "jsonQuery" : {
+          "where" : {
+            "subColumn" : "text",
+            "columnFieldName" : "description",
+            "value" : "No Stop/Stand/Park Cruising",
+            "operator" : "EQUALS"
+          },
+          "order" : [ {
+            "columnFieldName" : "description",
+            "ascending" : true
+          } ]
+        },
+        "custom_fields" : {
+          "Publishing Entity" : {
+            "Department" : "Finance"
+          }
+        },
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        }
+      },
+      "query" : {
+        "filterCondition" : {
+          "type" : "operator",
+          "value" : "AND",
+          "children" : [ {
+            "type" : "operator",
+            "value" : "EQUALS",
+            "children" : [ {
+              "columnId" : 250598102,
+              "type" : "column",
+              "value" : "TEXT"
+            }, {
+              "type" : "literal",
+              "value" : "No Stop/Stand/Park Cruising"
+            } ],
+            "metadata" : {
+              "unifiedVersion" : 2
+            }
+          } ],
+          "metadata" : {
+            "unifiedVersion" : 2
+          }
+        },
+        "orderBys" : [ {
+          "ascending" : true,
+          "expression" : {
+            "columnId" : 250598102,
+            "type" : "column"
+          }
+        } ]
+      },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "6r9a-dfdj",
+        "displayName" : "Open Baltimore",
+        "roleName" : "administrator",
+        "screenName" : "Open Baltimore",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards", "manage_provenance", "create_story", "edit_story_title_desc", "create_story_copy", "delete_story", "manage_story_collaborators", "manage_story_visibility", "manage_story_public_version", "edit_story", "view_unpublished_story", "view_story", "view_all_dataset_status_logs", "use_data_connectors" ]
+      },
+      "tags" : [ "fine", "parking", "citation" ],
+      "viewFilters" : {
+        "type" : "operator",
+        "value" : "AND",
+        "children" : [ {
+          "type" : "operator",
+          "value" : "EQUALS",
+          "children" : [ {
+            "columnId" : 250598102,
+            "type" : "column",
+            "value" : "TEXT"
+          }, {
+            "type" : "literal",
+            "value" : "No Stop/Stand/Park Cruising"
+          } ],
+          "metadata" : {
+            "unifiedVersion" : 2
+          }
+        } ],
+        "metadata" : {
+          "unifiedVersion" : 2
+        }
+      },
+      "flags" : [ "unsaved" ]
+    }
+  },
+  "data" : [ [ 1215814, "1615FE94-5082-46FD-8913-4A4D482452ED", 1215814, 1494410440, "697390", 1497952814, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 953700, "CF209976-56AC-4C1C-AF7A-9921F269171F", 953700, 1473242573, "697390", 1497003256, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 229879, "915B3F57-0E09-4C31-90EB-C21F982C6A77", 229879, 1459762123, "697390", 1497003246, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 227313, "BC35D28E-F452-4B80-A5D7-834B015E6D4B", 227313, 1459762031, "697390", 1497003216, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 143268, "292B7C5E-C408-4B6B-A2F9-14165FFD7479", 143268, 1459758983, "697390", 1497003094, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 176179, "413D172D-5C8D-4A99-8199-81FA7C9A3DF8", 176179, 1459760174, "697390", 1497003066, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1154867, "D5480A40-80F2-4947-A19D-2A7B4ED3A931", 1154867, 1489143702, "697390", 1497002917, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1126761, "71C52F0A-F742-4FA7-9499-088D1204593E", 1126761, 1486638285, "697390", 1497002823, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 13935, "65D0AB1A-E2C2-45F0-ADDA-BC8449958C3B", 13935, 1459755824, "697390", 1497002819, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 5234, "394633C1-6D43-4A3F-9411-E81DB7096FFB", 5234, 1459755775, "697390", 1497002479, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 698392, "9F1DCA62-EA9C-433B-AAA3-E37D2C8BF4CA", 698392, 1460470359, "913718", 1495548596, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1468091, "372ED6D6-A747-42D9-82B3-A7F2B6107457", 1468091, 1494595797, "697390", 1494595810, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 337910, "8960E722-71C2-4A1C-B70F-481E73579EC1", 337910, 1459766156, "697390", 1494588514, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 864018, "D216E351-899D-4FEF-9612-EBF54CBDE212", 864018, 1464922864, "697390", 1494587509, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 234419, "C11E2265-D6CD-49F3-9B5C-C4CA3C8222A5", 234419, 1459762299, "697390", 1494587440, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 231610, "7F842E8D-6E6C-4AF8-8959-047780144347", 231610, 1459762192, "697390", 1494587368, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 231471, "3E110028-6907-42FF-92A7-43DF947BFF7B", 231471, 1459762185, "697390", 1494587362, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 229746, "E354F220-177C-48B7-AADD-A6633F93633D", 229746, 1459762115, "697390", 1494587311, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 228695, "837C70DC-6892-4E41-AF76-3AC7793DAF6E", 228695, 1459762076, "697390", 1494587300, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 229458, "58C8D068-60A9-4EB1-AC43-1E472E1DC319", 229458, 1459762105, "697390", 1494587295, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 229313, "059AE564-9B51-49B1-857C-A3F74C5CA4AD", 229313, 1459762099, "697390", 1494587287, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 228232, "F77CA374-B5AC-450C-A120-C30DD8EFA7DE", 228232, 1459762059, "697390", 1494587279, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 228369, "EA3B6FF9-2B5A-4049-B2C3-1F2DEC9B43F0", 228369, 1459762064, "697390", 1494587277, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 228370, "C79805CE-AF56-4D52-B8F9-2D94AB5D171C", 228370, 1459762064, "697390", 1494587274, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 228266, "B6EF5E12-A018-4A51-A9EE-96FACD0EC590", 228266, 1459762059, "697390", 1494587273, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 227806, "77C114AA-D6E8-4134-AE1E-68B4B926DE85", 227806, 1459762045, "697390", 1494587265, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 228371, "51F4D4C7-A26C-4942-BBAF-B09E336AED00", 228371, 1459762064, "697390", 1494587262, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 228265, "4E83B268-8A01-4A2D-9923-DA1C818ED43F", 228265, 1459762059, "697390", 1494587260, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 227310, "E0DDB6AF-34AC-4F24-9557-86FB62990493", 227310, 1459762031, "697390", 1494587243, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 227030, "B0E6A40A-C80B-4F28-9F71-D205FE36911A", 227030, 1459762009, "697390", 1494587240, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1371414, "91C60091-7137-453C-9C64-DC02D6BF416B", 1371414, 1494583726, "697390", 1494587235, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1371413, "85067CAD-5694-411A-BB1C-46992CA72F4C", 1371413, 1494583726, "697390", 1494587234, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1371358, "7CFB3227-E335-48EF-ADBA-30B7BDA56EDB", 1371358, 1494583723, "697390", 1494587234, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1371344, "4F3BD974-A0A6-48A5-8B2E-1B4BC742C7B4", 1371344, 1494583723, "697390", 1494587229, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 228055, "40DD4CE5-B6A7-4829-AFB0-0BE5961858BA", 228055, 1459762053, "697390", 1494587227, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 227058, "3F56BB77-A68D-45B8-861A-C3E84E76A192", 227058, 1459762011, "697390", 1494587227, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 228146, "2C46AE06-DCB4-41AE-BD73-76729E461BB3", 228146, 1459762056, "697390", 1494587224, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 992782, "1A507BAE-D659-488E-84B5-2EB5A4B85899", 992782, 1476525917, "697390", 1494587224, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1371364, "16984669-CD05-400E-AF9D-07A745CDBC88", 1371364, 1494583724, "697390", 1494587221, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1371355, "F476F320-3D4A-4B5C-B269-15660AC2E984", 1371355, 1494583723, "697390", 1494587212, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 227028, "E1F49526-5716-4C0F-9859-407A1BD04239", 227028, 1459762009, "697390", 1494587210, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 227032, "BF832807-F425-47DD-9100-C3F0DE727363", 227032, 1459762009, "697390", 1494587208, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1371357, "762E1F02-13CA-4D52-8687-494B5E0F5FD9", 1371357, 1494583723, "697390", 1494587201, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 990355, "6AA85AC2-A30C-4842-B64E-BF1B69EE9BFA", 990355, 1476352996, "697390", 1494587201, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1371354, "69FFD765-CD63-4435-A4A5-415BCDBA918D", 1371354, 1494583723, "697390", 1494587201, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1371365, "1C497392-86D1-4269-9B45-45A233742405", 1371365, 1494583724, "697390", 1494587193, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1371356, "199F82B3-32F2-4939-954C-A008C3DC6E3A", 1371356, 1494583723, "697390", 1494587191, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1371363, "18167DC9-2C90-40F2-8A40-2F59C4FD7CB3", 1371363, 1494583724, "697390", 1494587191, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 227876, "F73AA6C2-D7C6-4CF0-9F55-D2E57D0D548F", 227876, 1459762046, "697390", 1494587183, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 180037, "637A7A4D-B5E8-4D01-BDB4-4A9B8C89B9D4", 180037, 1459760311, "697390", 1494584909, "697390", null, "No Stop/Stand/Park Cruising", "52.0000" ]
+, [ 1438160, "84D96AE8-7789-45EA-B53D-44E29ED03545", 1438160, 1494584063, "697390", 1494584063, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 231654, "B2894C32-1A9B-4C56-BCA0-5B5EA9417900", 231654, 1459762192, "697390", 1494583748, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 231653, "2EA2528C-B202-4E53-9790-5FBC7D9B0EF7", 231653, 1459762192, "697390", 1494583748, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 229744, "91574A44-98B2-4A80-A330-7A686375DF5C", 229744, 1459762115, "697390", 1494583736, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 229127, "7D9E0704-8742-485C-B69A-5778197C4FF6", 229127, 1459762092, "697390", 1494583734, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 226935, "0E816B60-6E8E-4993-BEF2-433D925C2FCF", 226935, 1459762005, "697390", 1494583723, "697390", null, "No Stop/Stand/Park Cruising", "52.0000" ]
+, [ 226681, "3366FDA7-7F9B-46B1-94DA-A2A81106823A", 226681, 1459761995, "697390", 1494583719, "697390", null, "No Stop/Stand/Park Cruising", "52.0000" ]
+, [ 226680, "E1308A34-AF95-441E-92F4-2A91A47C23D6", 226680, 1459761995, "697390", 1494583719, "697390", null, "No Stop/Stand/Park Cruising", "52.0000" ]
+, [ 1195466, "01A55E0A-C738-4B97-B5FC-B04A3846CBEA", 1195466, 1493114510, "697390", 1494523699, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1097217, "2D5377A8-4C64-4819-BBE9-D8584CA627BA", 1097217, 1484793826, "697390", 1494523645, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1046816, "EEEA3565-19B9-4967-AC1D-6FF90DD1F39D", 1046816, 1479380818, "697390", 1494523614, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1234013, "E688D6DC-9603-41D7-8038-6564F83F26F9", 1234013, 1494521343, "697390", 1494523450, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1233288, "03BC54DE-CEBD-41EA-B2C1-337EC2D7AC1A", 1233288, 1494521339, "697390", 1494523387, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 558538, "CF853BCF-4190-4B0C-B194-C6E9AB8E5516", 558538, 1460460659, "913718", 1494523329, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 23577, "F7E4819B-D9C2-4D33-8DB1-13831DE3F6A2", 23577, 1459755888, "697390", 1494523170, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 902911, "8F406C9A-2A83-4618-8693-00EFE7071C05", 902911, 1468378816, "697390", 1494522951, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1224379, "522BFE2D-4DF5-4372-A89F-C64D05515E23", 1224379, 1494521271, "697390", 1494522872, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1222988, "411166CE-7022-4C2A-9524-4780A68C3EF8", 1222988, 1494521259, "697390", 1494522810, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1118543, "3FCB606E-90FF-43E4-90FA-F89E9306A035", 1118543, 1486033455, "697390", 1494522465, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 7355, "F008274E-19C8-4835-9573-BED5BE41602D", 7355, 1459755788, "697390", 1494522416, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 7465, "3E2EDC59-2F5D-41FC-BA76-14E54FC1F3DE", 7465, 1459755792, "697390", 1494522394, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 6216, "0B31BD14-BACE-438E-A801-9B679EFBB1A8", 6216, 1459755780, "697390", 1494522267, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1229907, "F0B9D0C1-3603-4EC7-8499-FF901EAC2A6E", 1229907, 1494521317, "697390", 1494521317, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 12144, "B7DD2B53-8281-48C9-986E-F2426507814E", 12144, 1459755816, "697390", 1494521239, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+, [ 1122881, "085172CE-0CAB-4D6F-931B-1DD3234EBA0F", 1122881, 1486465456, "697390", 1494521173, "697390", null, "No Stop/Stand/Park Cruising", "77.0000" ]
+ ]
+}

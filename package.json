@@ -1,0 +1,19 @@
+{
+  "name": "citydata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pullCitationData.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config webpack.config.js"
+  },
+  "author": "jcc",
+  "license": "ISC",
+  "dependencies": {
+    "d3": "^4.9.1",
+    "express": "^4.15.3",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
+    "webpack": "^3.0.0"
+  }
+}

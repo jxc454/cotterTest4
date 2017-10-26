@@ -1,0 +1,387 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "zzzz-zzzz",
+      "name" : "Parking Citation Fine Amounts",
+      "attribution" : "Department of Finance",
+      "attributionLink" : "http://cityservices.baltimorecity.gov/parkingfines",
+      "averageRating" : 0,
+      "category" : "Financial",
+      "description" : "Information on parking citations issued within the City of Baltimore",
+      "displayType" : "table",
+      "downloadCount" : 0,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "indexUpdatedAt" : 1498903562,
+      "licenseId" : "CC_30_BY",
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 0,
+      "provenance" : "community",
+      "publicationAppendEnabled" : false,
+      "publicationStage" : "published",
+      "rowsUpdatedAt" : 1498903380,
+      "rowsUpdatedBy" : "6r9a-dfdj",
+      "tableId" : 9821251,
+      "totalTimesRated" : 0,
+      "viewCount" : 0,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 250598102,
+        "name" : "Description",
+        "dataTypeName" : "text",
+        "fieldName" : "description",
+        "position" : 9,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1434274,
+        "width" : 225,
+        "format" : { }
+      }, {
+        "id" : 250598103,
+        "name" : "ViolFine",
+        "dataTypeName" : "money",
+        "description" : "Original violation fine",
+        "fieldName" : "violfine",
+        "position" : 10,
+        "renderTypeName" : "money",
+        "tableColumnId" : 1434041,
+        "width" : 166,
+        "format" : {
+          "humane" : "false",
+          "currency" : "USD",
+          "align" : "right",
+          "aggregate" : "sum"
+        }
+      } ],
+      "grants" : [ {
+        "inherited" : true,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "Creative Commons Attribution 3.0 Unported",
+        "logoUrl" : "images/licenses/cc30by.png",
+        "termsLink" : "http://creativecommons.org/licenses/by/3.0/legalcode"
+      },
+      "metadata" : {
+        "thumbnail" : {
+          "page" : {
+            "filename" : "page.png-341.182.436.0.png",
+            "selection" : {
+              "width" : 341,
+              "y1" : 0,
+              "y2" : 182,
+              "x1" : 436,
+              "x2" : 777,
+              "height" : 182
+            },
+            "created" : true
+          }
+        },
+        "rdfSubject" : "0",
+        "jsonQuery" : {
+          "where" : {
+            "subColumn" : "text",
+            "columnFieldName" : "description",
+            "value" : "In Taxicab Stand",
+            "operator" : "EQUALS"
+          },
+          "order" : [ {
+            "columnFieldName" : "description",
+            "ascending" : true
+          } ]
+        },
+        "custom_fields" : {
+          "Publishing Entity" : {
+            "Department" : "Finance"
+          }
+        },
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        }
+      },
+      "query" : {
+        "filterCondition" : {
+          "type" : "operator",
+          "value" : "AND",
+          "children" : [ {
+            "type" : "operator",
+            "value" : "EQUALS",
+            "children" : [ {
+              "columnId" : 250598102,
+              "type" : "column",
+              "value" : "TEXT"
+            }, {
+              "type" : "literal",
+              "value" : "In Taxicab Stand"
+            } ],
+            "metadata" : {
+              "unifiedVersion" : 2
+            }
+          } ],
+          "metadata" : {
+            "unifiedVersion" : 2
+          }
+        },
+        "orderBys" : [ {
+          "ascending" : true,
+          "expression" : {
+            "columnId" : 250598102,
+            "type" : "column"
+          }
+        } ]
+      },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "6r9a-dfdj",
+        "displayName" : "Open Baltimore",
+        "roleName" : "administrator",
+        "screenName" : "Open Baltimore",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards", "manage_provenance", "create_story", "edit_story_title_desc", "create_story_copy", "delete_story", "manage_story_collaborators", "manage_story_visibility", "manage_story_public_version", "edit_story", "view_unpublished_story", "view_story", "view_all_dataset_status_logs", "use_data_connectors" ]
+      },
+      "tags" : [ "fine", "parking", "citation" ],
+      "viewFilters" : {
+        "type" : "operator",
+        "value" : "AND",
+        "children" : [ {
+          "type" : "operator",
+          "value" : "EQUALS",
+          "children" : [ {
+            "columnId" : 250598102,
+            "type" : "column",
+            "value" : "TEXT"
+          }, {
+            "type" : "literal",
+            "value" : "In Taxicab Stand"
+          } ],
+          "metadata" : {
+            "unifiedVersion" : 2
+          }
+        } ],
+        "metadata" : {
+          "unifiedVersion" : 2
+        }
+      },
+      "flags" : [ "unsaved" ]
+    }
+  },
+  "data" : [ [ 1117952, "04FE77FA-91A4-4F53-B83F-74A2CA175A09", 1117952, 1485957286, "697390", 1497365812, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1123514, "CFA4F2CD-AB42-4FAD-9D5F-E1E58D551B35", 1123514, 1486467904, "697390", 1497365527, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1085651, "0A4A0323-A80D-446F-8633-0CFB908A96F5", 1085651, 1483009875, "697390", 1497364912, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1213383, "95283C5F-8DE4-4E2D-97C3-7C548A0A6246", 1213383, 1494324375, "697390", 1497348413, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1189344, "602444B6-8B60-44C3-BDB6-CA340BF3FBE9", 1189344, 1492509748, "697390", 1497348015, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 929917, "0BD004F7-F1E6-4CF9-82AC-E36C15CAC8D6", 929917, 1470798488, "697390", 1497015981, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 897373, "9CFD9F21-1E12-47C5-BDF2-6C875D759746", 897373, 1467774547, "697390", 1497014175, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1188754, "8000D438-6DCE-49B0-881D-D00A8720A26C", 1188754, 1492250501, "697390", 1497003071, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1118688, "4FAE9B10-9F45-41CE-9000-3A9453EBD761", 1118688, 1486033694, "697390", 1497003008, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 984327, "DE15BD38-8690-4B59-84C7-3682AEAC563A", 984327, 1475748005, "697390", 1497002836, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1065984, "B4206DF9-8572-4EB6-99F0-28310F10F540", 1065984, 1481108609, "697390", 1497002709, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1195444, "D3D5D46B-178C-4D53-ADCC-7D1F2660693A", 1195444, 1493114510, "697390", 1496916060, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1172946, "D6954723-DBAF-4DE7-B943-E24A37918BCE", 1172946, 1490696153, "697390", 1495556217, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1172947, "974BF9E3-DF93-4C47-A4FB-F647C34FAEFD", 1172947, 1490696153, "697390", 1495556217, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1143088, "E44A69B4-ED0E-4C81-9036-5A6374991D07", 1143088, 1487935729, "697390", 1495548644, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1143089, "33C2CFEE-49EF-475B-B186-5BF9AE1F7C46", 1143089, 1487935729, "697390", 1495548634, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1048176, "092E154B-1404-4DEA-8E66-0CCA4C026739", 1048176, 1479557803, "697390", 1495487181, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1117822, "8F744F91-D5CA-4A4E-94A3-9B22F2252C92", 1117822, 1485957278, "697390", 1495473342, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1115811, "0432D70D-9362-4454-B0D1-4B8094DB4A71", 1115811, 1485863167, "697390", 1495473290, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1113951, "760D51AB-CAA3-418F-9197-4EB1B2C5C6DB", 1113951, 1485602609, "697390", 1495472613, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1105745, "BF850BA2-58A4-4E20-BE3E-7C5625151D86", 1105745, 1484911757, "697390", 1495471927, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1105744, "BB5FDF7F-F7D4-41CF-A7C0-C4990820CF54", 1105744, 1484911757, "697390", 1495471926, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1119123, "B04CBA40-FAF5-4658-95FE-92E57642C9EB", 1119123, 1486122312, "697390", 1495471617, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1057319, "F8590F0C-116A-4604-A79F-C7B5BEB4344F", 1057319, 1480418664, "697390", 1495471264, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1031684, "74CC082F-5408-435F-B6E6-1E43BA56EE26", 1031684, 1478082439, "697390", 1495458948, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1023035, "CDE679D3-8FAD-41B0-B225-CBC31A87107B", 1023035, 1477390792, "697390", 1495458810, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1025771, "FB1AA746-9805-4929-8FC7-AFDABFF73446", 1025771, 1477566095, "697390", 1495458495, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 972792, "AD4689EA-B23D-49C3-8F6B-74E64965FA53", 972792, 1474713613, "697390", 1495208754, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1011256, "60FD24CE-BC33-4814-A4CA-26B14DF85DE2", 1011256, 1476937615, "697390", 1495203910, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 958055, "F0751746-CC3E-4972-B842-2315FFDF65EF", 958055, 1473330747, "697390", 1495203857, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 952251, "A2DD83BE-045E-4957-9591-1F3B2792CC75", 952251, 1472725266, "697390", 1495203718, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 972108, "3A31CCB1-1C35-4179-99BC-8938B9C3935A", 972108, 1474713601, "697390", 1495203623, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 972107, "1E1FE860-EB2E-4DD8-A3CA-044336D02B4F", 972107, 1474713601, "697390", 1495203510, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 936020, "16C4327F-47DD-46DF-896C-F89122BD54BF", 936020, 1471318501, "697390", 1495203324, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 976267, "D58A4D00-F89B-4BD7-A486-51C1DE025B08", 976267, 1475146175, "697390", 1495199159, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 976266, "6E43CF44-4E44-47BC-B7E7-73BA3286C641", 976266, 1475146175, "697390", 1495199153, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 927201, "83C59EC6-7892-48F1-9445-292657B9CFAF", 927201, 1470635544, "697390", 1495115432, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 929918, "7C7DE890-A402-4853-9F73-A8A551AAF68D", 929918, 1470798488, "697390", 1495115413, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 930969, "DCC51478-2D66-430F-917B-0AB1A5498AA2", 930969, 1470884792, "697390", 1495115344, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 913033, "536ED9BD-788C-4D2E-8846-28CC524457A6", 913033, 1469156601, "697390", 1495114548, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 908840, "B11C6990-FDCD-4600-85C0-FA75306BCFFB", 908840, 1468984721, "697390", 1495114181, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 897374, "2D4A8B20-4852-4549-9308-C54DF002CD77", 897374, 1467774547, "697390", 1495114002, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 897372, "2484681D-FDAB-4A59-AC0C-E9BC4E864028", 897372, 1467774547, "697390", 1495114002, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 897071, "B8760C9F-0953-42A5-9C87-B8DE7063B90E", 897071, 1467774545, "697390", 1495113990, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 897072, "954AF08E-BA8E-4B60-8497-0000419DB6F1", 897072, 1467774545, "697390", 1495113988, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 897171, "884E1D13-3FA9-4287-A252-CF3CF5EBBF8C", 897171, 1467774546, "697390", 1495113987, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 893083, "711F3589-F6A2-4262-A55F-0E4D1A2AC4E8", 893083, 1467343407, "697390", 1495113811, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 891873, "E35FF2F8-5CEA-417E-AF8D-CF048EE977B1", 891873, 1467255817, "697390", 1495113682, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 849837, "37A632EB-A8A5-45DB-AFEA-7CFAEA41A54C", 849837, 1463540551, "697390", 1495055236, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1744280, "CADEF6F5-8501-4509-8811-CA22F52C92E8", 1744280, 1495025255, "697390", 1495035758, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 906410, "D0150694-5C43-4D12-8EFE-D52D41CA4EDB", 906410, 1468639697, "697390", 1494959814, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 906398, "097DFA07-9738-48FC-82F9-EEBBAA30A05F", 906398, 1468639697, "697390", 1494959801, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 798330, "89A8AFE2-1E4D-4C42-93D7-27FBB2EF6DDE", 798330, 1460629971, "913718", 1494959788, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1662054, "11C8B97C-6545-4E52-9E04-7B0B4EA8C48D", 1662054, 1494949529, "697390", 1494959460, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1624395, "820FB31B-0981-4527-9112-EB69CA3691E3", 1624395, 1494949238, "697390", 1494956368, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1710679, "6EC50C3B-3F46-4794-A9AF-5206C4F6895C", 1710679, 1494952732, "697390", 1494952732, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1697119, "60055C3C-F69E-454D-A249-8E93A2770BF5", 1697119, 1494950707, "697390", 1494950897, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1692949, "6AA988A4-2F3F-401B-8A75-AFA2E2C39797", 1692949, 1494950673, "697390", 1494950673, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1676711, "C1DF8B41-D9FB-4FD6-A64C-C1B600FD5FAD", 1676711, 1494949732, "697390", 1494949732, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 795964, "3D21EBCD-AF28-4642-BCD6-8EACB230BF9D", 795964, 1460629949, "913718", 1494949370, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1621074, "9F94A82B-D894-4CED-9C8A-CCEE9A7B3DE8", 1621074, 1494949217, "697390", 1494949217, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1584042, "4C7BDBF1-DEE8-4894-86E9-0782D93BC909", 1584042, 1494943146, "697390", 1494943595, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 543395, "BAE5B305-06F2-492D-A824-5545A260A4BD", 543395, 1459774588, "697390", 1494943535, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1562097, "BF6101DA-94C0-42B8-AEAF-36148267D697", 1562097, 1494669962, "697390", 1494670725, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1556730, "8D665761-551F-4CF3-BCFB-F934B32579A6", 1556730, 1494669845, "697390", 1494670410, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1552667, "CF8E5F31-2A46-4B62-80C8-9CCFA1F9E80C", 1552667, 1494669726, "697390", 1494669737, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1454351, "6A07883A-6816-412B-8F88-51B06EC04D59", 1454351, 1494595006, "697390", 1494615367, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1454350, "65C14F36-7D10-408C-8401-2DB6C387C9A5", 1454350, 1494595006, "697390", 1494615365, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1448450, "9EF53572-C2A9-4433-9996-01DE9DEBAF93", 1448450, 1494594946, "697390", 1494615162, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1495565, "A97BB9E4-84B5-4212-98B8-D0154479C1B7", 1495565, 1494598111, "697390", 1494598524, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1502409, "E1122FBA-BC22-4446-A9DF-DB219ECD7CC8", 1502409, 1494598258, "697390", 1494598258, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1475668, "5E9349C6-8138-4177-A7C4-16877816235D", 1475668, 1494595902, "697390", 1494596199, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1450473, "7C64D309-2425-41D7-9482-D2186E1FB84B", 1450473, 1494594965, "697390", 1494594965, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1450398, "27DFA484-8307-437D-94A3-CD1D3AA4F721", 1450398, 1494594965, "697390", 1494594965, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1450397, "A2CA2822-9841-4F26-BF20-D81EFE8B3833", 1450397, 1494594965, "697390", 1494594965, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 308986, "11ADEC77-739B-4AC8-94FF-4E2585641290", 308986, 1459765075, "697390", 1494588125, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 235976, "7609C94E-5224-4B6D-9578-96FC33385A04", 235976, 1459762352, "697390", 1494587529, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 233434, "D3FA1E62-82A9-4BF0-9E9D-55AA9FF5FB0C", 233434, 1459762261, "697390", 1494587477, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 233783, "D1A2E109-6A23-4182-A2AC-3825803B43FE", 233783, 1459762273, "697390", 1494587477, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 232751, "2933BBDF-FBC4-43FE-BFD8-153C52BBB1F2", 232751, 1459762236, "697390", 1494587422, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 231676, "A57CC3AC-C56E-4F59-9A66-00332098254B", 231676, 1459762194, "697390", 1494587374, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 231211, "625389FF-06B9-4AB5-AE7F-A9139F3AAEE2", 231211, 1459762174, "697390", 1494587365, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 227783, "ECB556F5-A9FF-4E62-93C7-118909701BC6", 227783, 1459762043, "697390", 1494587279, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 228441, "868205BD-E52F-406D-A903-7DD14B96FC20", 228441, 1459762068, "697390", 1494587265, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 227796, "53FB12B7-D05A-4474-8908-0A7DC1A41A2F", 227796, 1459762043, "697390", 1494587262, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 228117, "20B451F2-7C08-42C7-9F59-CF34EAC469AA", 228117, 1459762055, "697390", 1494587257, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 227368, "FC97276A-47BA-4436-A2C9-5FACA18ACC81", 227368, 1459762033, "697390", 1494587246, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 227366, "AE56739E-6564-4FFF-9749-3CC232F6413A", 227366, 1459762033, "697390", 1494587240, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1371325, "2DC1D47F-9381-4DE2-AB86-BA7C0B74B67E", 1371325, 1494583723, "697390", 1494587224, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 228306, "1261AB1F-FCF1-4D36-847C-DB280AD41C70", 228306, 1459762062, "697390", 1494587221, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 226968, "C58675D9-A59C-4AD0-A893-85819C1B7491", 226968, 1459762006, "697390", 1494587208, "697390", null, "In Taxicab Stand", "27.0000" ]
+, [ 227572, "1AED1FE7-E5DE-4D98-9EBC-C31E3C1A4B63", 227572, 1459762037, "697390", 1494586168, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 235068, "73A5E7F0-F8AB-4E5E-BBBF-34595DD00803", 235068, 1459762333, "697390", 1494583763, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 231501, "939CD927-0083-4858-A7AF-254606AD881C", 231501, 1459762185, "697390", 1494583747, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 226932, "54F2B6E0-A226-443E-986B-2E8277CFACF1", 226932, 1459762005, "697390", 1494583723, "697390", null, "In Taxicab Stand", "27.0000" ]
+, [ 141945, "1DA74C17-2217-468B-BA5B-A4484B5B51B3", 141945, 1459758937, "697390", 1494531235, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 139444, "F32681BB-A066-4295-9D9D-A4AABCC49146", 139444, 1459758848, "697390", 1494531066, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1157507, "B587EC2F-4920-471E-BABD-224EC26F14AF", 1157507, 1489230027, "697390", 1494523713, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1116757, "EE7466F1-4C31-4ADE-9522-711C11D38862", 1116757, 1485948198, "697390", 1494523691, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1090144, "0B366E5F-3D1C-48E8-BE71-C295414124F7", 1090144, 1483980862, "697390", 1494523643, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1229431, "D07D607F-EAB5-4291-819A-58A581B38489", 1229431, 1494521316, "697390", 1494523279, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1229362, "48FF3D9A-B306-4401-BFB9-BB2C8104C23A", 1229362, 1494521316, "697390", 1494523266, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 835572, "87DC7A40-7218-47C0-BBDE-1B4A3A674594", 835572, 1462503619, "697390", 1494523074, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1225410, "E875A7F6-13CE-4C98-A0E7-A619F7CC2691", 1225410, 1494521284, "697390", 1494523049, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1225519, "722B36C6-BD9F-4097-9FB2-6E7C5B4B0A64", 1225519, 1494521284, "697390", 1494522992, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1224118, "9898B0DA-A08B-4151-B0ED-3754673AB41C", 1224118, 1494521269, "697390", 1494522914, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1224115, "171FA15E-E984-45EE-A38E-C3021A4401C9", 1224115, 1494521269, "697390", 1494522864, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1223827, "6FC3F9A4-6062-4F32-AEDF-A40A0BCFDE9F", 1223827, 1494521266, "697390", 1494522837, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 12597, "DBECE838-3DE6-4DAC-AF5F-4BE4BEA1BB06", 12597, 1459755817, "697390", 1494522697, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1221889, "6A015457-0B9F-4912-A478-145CFBA3B7B6", 1221889, 1494521244, "697390", 1494522683, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1221854, "FD6EB713-0A4D-4800-8D52-B1BECFF2CD52", 1221854, 1494521240, "697390", 1494522662, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 13247, "9B2C35B4-EBBD-402C-9CFF-B482443767AC", 13247, 1459755822, "697390", 1494522653, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 11995, "591A141B-6622-4FF9-A086-89AAF20E8896", 11995, 1459755816, "697390", 1494522644, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 11779, "F99ABA3F-A710-4C8C-86BB-D1D93C907BC3", 11779, 1459755816, "697390", 1494522626, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1221604, "BBF434CF-D3F6-4B2B-8BBA-FC2A427AEC7A", 1221604, 1494521236, "697390", 1494522584, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1221066, "BA0E8CCE-CB2E-48FE-9568-7F4348FEF08B", 1221066, 1494521230, "697390", 1494522548, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 10473, "9DF758D7-964A-4B3F-A537-4C2FA193A986", 10473, 1459755806, "697390", 1494522546, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1220859, "8F9D3590-5903-4A39-9A56-54A70B8E3DB9", 1220859, 1494521229, "697390", 1494522543, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1221148, "69CCAC04-635E-4220-8CD3-1ABA8A9EE871", 1221148, 1494521230, "697390", 1494522540, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 9770, "665CD064-0433-4C7F-BF2E-EA96A8EF9ED1", 9770, 1459755805, "697390", 1494522502, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 996679, "D1943C10-728D-42C6-9ABE-F5F33B33AAAC", 996679, 1476871204, "697390", 1494522480, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1219625, "52456C9D-4083-4580-BD68-68ADD6027301", 1219625, 1494521212, "697390", 1494522397, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 6448, "E85FB7F9-9332-4ABD-84ED-549D39D7F54E", 6448, 1459755786, "697390", 1494522379, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1219105, "175C5445-F901-419C-8D18-98DDA620CFA6", 1219105, 1494521205, "697390", 1494522351, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1219161, "5BC1A821-F39B-4E8E-BB62-743F749B7540", 1219161, 1494521205, "697390", 1494522320, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1218677, "CFFAAA11-82CA-44C5-8819-EF79B306A837", 1218677, 1494521183, "697390", 1494522255, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1218565, "D046D7FC-851D-4AC7-A2D2-FCA8B869213E", 1218565, 1494521177, "697390", 1494522214, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1218663, "800BD095-79B4-4F29-B808-F0F867079572", 1218663, 1494521183, "697390", 1494522204, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 3545, "7597A6D9-8E12-43A3-95C6-489CCE3AC017", 3545, 1459755767, "697390", 1494522202, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 2807, "FB1E4796-5368-460D-8C3D-CB795A7531D9", 2807, 1459755760, "697390", 1494522178, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1218567, "6D5C1443-AEDE-4B9A-8792-AF6DFB141A91", 1218567, 1494521177, "697390", 1494522160, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 91, "A8CA0409-A0AE-4A0E-A9AF-4EB4C5F20769", 91, 1459755744, "697390", 1494522074, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 21065, "4FC6DCD4-B7B8-467A-812D-B163173DC70C", 21065, 1459755873, "697390", 1494521289, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 892699, "139D8629-1226-4310-A152-FB6478924444", 892699, 1467342032, "697390", 1494521281, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1224914, "9837E4B6-F4B9-42AE-9A30-69881FD6809D", 1224914, 1494521276, "697390", 1494521276, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 12989, "F61F57A1-46DA-462E-84F3-A4DDFDC58977", 12989, 1459755822, "697390", 1494521245, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1220927, "A9212715-45BD-4C61-A424-FFA73FEB2600", 1220927, 1494521229, "697390", 1494521229, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 1220855, "12B66480-6A2E-4021-898B-6AFDCC23E19B", 1220855, 1494521229, "697390", 1494521229, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 6158, "C6DE7C89-3C40-4CD5-9B7E-6F7E2609F718", 6158, 1459755780, "697390", 1494521200, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 908554, "A93F5208-7738-45DF-8A8A-A8AA091AED01", 908554, 1468984672, "697390", 1476935752, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 918968, "F45591FB-E615-455B-A483-91824C982922", 918968, 1469763108, "697390", 1476934151, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 518118, "CFA1C3E0-C2D7-4389-B8A7-38C639DB1D1C", 518118, 1459773533, "697390", 1476923847, "697390", null, "In Taxicab Stand", "32.0000" ]
+, [ 171518, "81FA4CB2-D61E-4FD5-A62D-FF8802614734", 171518, 1459760013, "697390", 1476915306, "697390", null, "In Taxicab Stand", "32.0000" ]
+ ]
+}
