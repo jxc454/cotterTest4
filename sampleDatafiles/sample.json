@@ -1,1 +1,8 @@
-{values: [1, 2, 3]}
+{"values": [1, 2, 3],
+"letters": ["a", "z", "y", "f", "g", "h"],
+"word": "haberdashery",
+"name": "Minnie",
+"game": "poker",
+"instrument": "guitar",
+"number": 561
+}
