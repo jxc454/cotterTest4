@@ -7,7 +7,7 @@ module.exports = {
         let datafile = require('./datafiles/homicide20132014.json');
         let dt = null;
 
-        let exportData = _.map(datafile.data, homicide=>{
+        let exportData = _.map(datafile.data, homicide => {
             dt = new Date(homicide[9]);
             return {
                 "series": homicide[14].toUpperCase(),
