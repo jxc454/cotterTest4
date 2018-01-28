@@ -17,6 +17,10 @@ var app = express();
 app.use(express.static('static'));
 app.use(express.static('dist'));
 
+app.get('/brady.html', function(req, res){
+    // WHOOOOOOAAHHAHAHAHAHAH
+});
+
 app.get('/dist/main.js', function(req, res){
     res.sendFile(path.join(__dirname, 'dist/main.js'));
 });
