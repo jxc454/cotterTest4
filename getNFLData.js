@@ -1,5 +1,5 @@
 module.exports = function getNFLData(){
-    let url = "http://www.nfl.com/liveupdate/game-center/2012020500/2017090700_gtd.json";
+    let url = "http://www.nfl.com/liveupdate/game-center/2012020500/2012020500_gtd.json";
 
     http.get(url, function(res){
         var body = '';
