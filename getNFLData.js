@@ -1,3 +1,5 @@
+// This is a javascript file yo.
+
 module.exports = function getNFLData(){
     let url = "http://www.nfl.com/liveupdate/game-center/2012020500/2012020500_gtd.json";
 
