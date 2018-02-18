@@ -1,6 +1,8 @@
 let _ = require('lodash');
 let d3 = require('d3');
 let $ = require('jquery');
+import React from 'react';
+import PropTypes from 'react-proptypes';
 
 let datafile = require('./datafiles/sampleNFLData.json');
 
