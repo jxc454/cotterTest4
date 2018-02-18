@@ -3,6 +3,7 @@ let d3 = require('d3');
 let $ = require('jquery');
 import React from 'react';
 import PropTypes from 'react-proptypes';
+import ride from 'react-move';
 
 let datafile = require('./datafiles/sampleNFLData.json');
 
